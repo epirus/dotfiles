@@ -26,6 +26,8 @@ Plug 'honza/vim-snippets'
 Plug 'junegunn/goyo.vim'
 Plug 'roxma/vim-paste-easy'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'thinca/vim-quickrun'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
@@ -84,6 +86,7 @@ nmap <C-l> <C-W>l
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <leader>t :vsp term://zsh<CR>
+nmap <leader>r :QuickRun<CR>
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
@@ -98,6 +101,8 @@ noremap <leader>` :TagbarToggle<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
 tnoremap <Esc> <C-\><C-n>
 nmap <silent> <leader>rl :so $MYVIMRC<CR>
+
+highlight SignColumn ctermbg=8
 
 "Remember Last Position
 autocmd BufReadPost *
