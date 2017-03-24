@@ -60,6 +60,8 @@ set undofile
 set undodir=~/undo_file_neovim
 set cursorline
 set cursorcolumn
+set splitbelow
+set splitright
 
 colorscheme solarized
 
@@ -85,7 +87,8 @@ nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
-nmap <leader>t :vsp term://zsh<CR>
+nmap <leader>tv :vsp term://zsh<CR>
+nmap <leader>th :split term://zsh<CR>
 nmap <leader>r :QuickRun<CR>
 noremap <leader>1 1gt
 noremap <leader>2 2gt
