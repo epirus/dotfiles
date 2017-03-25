@@ -28,6 +28,7 @@ Plug 'roxma/vim-paste-easy'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'thinca/vim-quickrun'
 Plug 'kshenoy/vim-signature'
+Plug 'djoshea/vim-autoread'
 
 call plug#end()
 
@@ -57,7 +58,7 @@ set shiftwidth=2
 set tabstop=2
 set lazyredraw
 set undofile
-set undodir=~/undo_file_neovim
+set undodir=~/tmp/
 set cursorline
 set cursorcolumn
 set splitbelow
