@@ -117,3 +117,8 @@ if exists percol; then
     zle -N percol_select_history
     bindkey '^R' percol_select_history
 fi
+
+#Go Environment
+export GOPATH=/usr/local/go
+export PATH=$PATH:$GOPATH/bin
+#
