@@ -102,8 +102,11 @@ noremap <leader>9 9gt
 noremap <leader>0 :tablast<CR>
 noremap <leader>` :TagbarToggle<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
-tnoremap <Esc> <C-\><C-n>
 nmap <silent> <leader>rl :so $MYVIMRC<CR>
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
+    nmap <BS> <C-W>h
+endif
 
 highlight SignColumn ctermbg=8
 
@@ -113,6 +116,4 @@ autocmd BufReadPost *
       \   exe "normal! g`\"" |
       \ endif
 
-if has('nvim')
-    nmap <BS> <C-W>h
-endif
+
