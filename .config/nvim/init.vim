@@ -36,7 +36,7 @@ let g:mapleader = ','
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_left_alt_sep = ''
-let g:airline_theme="solarized"
+let g:airline_theme = "solarized"
 let g:deoplete#enable_at_startup = 1
 let NERDTreeIgnore = ['\.pyc$']
 
