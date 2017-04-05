@@ -13,7 +13,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
-Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-system-copy'
@@ -58,7 +57,7 @@ set shiftwidth=2
 set tabstop=2
 set lazyredraw
 set undofile
-set undodir=~/tmp/
+set undodir=/tmp/
 set cursorline
 set cursorcolumn
 set splitbelow
