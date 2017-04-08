@@ -87,9 +87,7 @@ nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
-nmap <leader>tv :vsp term://zsh<CR>
-nmap <leader>th :split term://zsh<CR>
-nmap <leader>r :QuickRun<CR>
+nmap <leader><F12> :QuickRun<CR>
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
@@ -102,10 +100,15 @@ noremap <leader>9 9gt
 noremap <leader>0 :tablast<CR>
 noremap <leader>` :TagbarToggle<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
-nmap <silent> <leader>rl :so $MYVIMRC<CR>
+nmap <silent> <leader>r :so $MYVIMRC<CR>
 if has('nvim')
+
     tnoremap <Esc> <C-\><C-n>
     nmap <BS> <C-W>h
+    nmap <leader>tv :vsp term://zsh<CR>
+    nmap <leader>tn :tabnew term://zsh<CR>
+    nmap <leader>th :split term://zsh<CR>
+
 endif
 
 highlight SignColumn ctermbg=8
