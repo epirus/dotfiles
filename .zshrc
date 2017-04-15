@@ -103,6 +103,7 @@ if [[ `uname` == 'Darwin' ]]
 then
   alias vi="nvim"
   alias vim="nvim"
+  alias caff="caffeinate -d"
 fi
 
 alias wget="wget -c"
