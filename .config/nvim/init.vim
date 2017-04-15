@@ -28,6 +28,9 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'thinca/vim-quickrun'
 Plug 'kshenoy/vim-signature'
 Plug 'djoshea/vim-autoread'
+Plug 'chemzqm/wxapp.vim'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
@@ -39,6 +42,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_theme = "solarized"
 let g:deoplete#enable_at_startup = 1
 let NERDTreeIgnore = ['\.pyc$']
+let g:goyo_width = 130
 
 set background=dark
 set encoding=utf-8
@@ -72,6 +76,7 @@ map <leader>nf :NERDTreeFind<CR>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>pp :setlocal paste!<CR>
 map <leader>g :Ack!
+nmap <leader>js :call JsBeautify()<CR>
 nmap <leader>z :Goyo<CR>
 nmap <leader>s :%s//g<left>
 nmap <leader>h :tabprevious<CR>
@@ -102,21 +107,16 @@ noremap <leader>` :TagbarToggle<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
 nmap <silent> <leader>r :so $MYVIMRC<CR>
 if has('nvim')
-
     tnoremap <Esc> <C-\><C-n>
     nmap <BS> <C-W>h
     nmap <leader>tv :vsp term://zsh<CR>
     nmap <leader>tn :tabnew term://zsh<CR>
     nmap <leader>th :split term://zsh<CR>
-
 endif
 
 highlight SignColumn ctermbg=8
-
 "Remember Last Position
 autocmd BufReadPost *
       \ if line("'\"") > 0 && line("'\"") <= line("$") |
       \   exe "normal! g`\"" |
       \ endif
-
-
