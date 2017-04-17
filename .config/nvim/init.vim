@@ -15,7 +15,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
-Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -69,6 +68,7 @@ set splitright
 
 colorscheme solarized
 
+"Basic map
 map <silent> <leader><CR> :noh<CR>
 map <leader>w :w<CR>
 map <leader>n :NERDTreeToggle<CR>
@@ -76,6 +76,8 @@ map <leader>nf :NERDTreeFind<CR>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>pp :setlocal paste!<CR>
 map <leader>g :Ack!
+map v <S-v>
+map <leader>cp "+y
 nmap <leader>js :call JsBeautify()<CR>
 nmap <leader>z :Goyo<CR>
 nmap <leader>s :%s//g<left>
@@ -106,6 +108,7 @@ noremap <leader>0 :tablast<CR>
 noremap <leader>` :TagbarToggle<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
 nmap <silent> <leader>r :so $MYVIMRC<CR>
+
 if has('nvim')
     tnoremap <Esc> <C-\><C-n>
     nmap <BS> <C-W>h
@@ -113,6 +116,8 @@ if has('nvim')
     nmap <leader>tn :tabnew term://zsh<CR>
     nmap <leader>th :split term://zsh<CR>
 endif
+
+"Plugin map
 
 highlight SignColumn ctermbg=8
 "Remember Last Position
