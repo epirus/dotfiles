@@ -30,6 +30,7 @@ Plug 'djoshea/vim-autoread'
 Plug 'chemzqm/wxapp.vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
