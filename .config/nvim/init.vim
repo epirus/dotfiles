@@ -107,6 +107,8 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<CR>
 noremap <leader>` :TagbarToggle<CR>
+noremap <leader>f1 :set foldlevel=1<CR>
+noremap <leader>f2 :set foldlevel=2<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
 nmap <silent> <leader>r :so $MYVIMRC<CR>
 
@@ -119,9 +121,9 @@ if has('nvim')
 endif
 
 "http://stackoverflow.com/questions/39645253/clipboard-failure-in-tmux-vim-after-upgrading-to-macos-sierra
-set clipboard=unnamed
-
+" set clipboard=unnamed
 highlight SignColumn ctermbg=8
+
 "Remember Last Position
 autocmd BufReadPost *
       \ if line("'\"") > 0 && line("'\"") <= line("$") |
