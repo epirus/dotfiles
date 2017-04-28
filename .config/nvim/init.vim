@@ -41,7 +41,7 @@ let g:airline_right_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_theme = "solarized"
 let g:deoplete#enable_at_startup = 1
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$','node_modules']
 let g:goyo_width = 130
 
 set background=dark
