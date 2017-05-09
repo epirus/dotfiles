@@ -44,6 +44,7 @@ let g:deoplete#enable_at_startup = 1
 let NERDTreeIgnore = ['\.pyc$','node_modules']
 let g:goyo_width = 130
 
+set nocompatible
 set background=dark
 set encoding=utf-8
 set expandtab
@@ -60,12 +61,15 @@ set foldlevel=2
 set shiftwidth=2
 set tabstop=2
 set lazyredraw
+set ttyfast
+set synmaxcol=20          "Only highlight the first 200 columns.
 set undofile
 set undodir=/tmp/
 set cursorline
 set cursorcolumn
 set splitbelow
 set splitright
+set backspace =indent,eol,start
 
 colorscheme solarized
 
@@ -81,7 +85,7 @@ map v <S-v>
 map <leader>cp "+y
 nmap <leader>js :call JsBeautify()<CR>
 nmap <leader>z :Goyo<CR>
-nmap <leader>s :%s//g<left>
+nmap <leader>s :%s///g<LEFT><LEFT><LEFT>
 nmap <leader>h :tabprevious<CR>
 nmap <leader>l :tabnext<CR>
 nmap <leader>c :SClose<CR>
@@ -107,8 +111,10 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<CR>
 noremap <leader>` :TagbarToggle<CR>
+noremap <leader>f0 :set foldlevel=0<CR>
 noremap <leader>f1 :set foldlevel=1<CR>
 noremap <leader>f2 :set foldlevel=2<CR>
+noremap <leader>f3 :set foldlevel=3<CR>
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<C-i>"
 nmap <silent> <leader>r :so $MYVIMRC<CR>
 
