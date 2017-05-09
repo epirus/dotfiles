@@ -13,3 +13,5 @@ if [ ! -d ~/.config/nvim ]; then
 else
   cp -r ./.config/nvim/* ~/.config/nvim/
 fi
+
+cp ./.npmrc ~/.npmrc && cp ./.yarnrc ~/.yarnrc

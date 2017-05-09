@@ -1,0 +1,7 @@
+[user]
+	name = foo
+	email = bar
+[core]
+	editor = /usr/local/bin/vim
+[http]
+	proxy = 
