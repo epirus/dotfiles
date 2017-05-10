@@ -14,6 +14,7 @@ else
   cp -r ./.config/nvim/* ~/.config/nvim/
 fi
 
+git config --global core.excludesfile ~/.gitignore_global
 cp ./.npmrc ~/.npmrc
 cp ./.yarnrc ~/.yarnrc
 cp ./.gitignore_global ~/.gitignore_global
