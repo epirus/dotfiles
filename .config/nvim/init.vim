@@ -62,7 +62,7 @@ set shiftwidth=2
 set tabstop=2
 set lazyredraw
 set ttyfast
-set synmaxcol=20          "Only highlight the first 200 columns.
+set synmaxcol=200          "Only highlight the first 200 columns.
 set undofile
 set undodir=/tmp/
 set cursorline
