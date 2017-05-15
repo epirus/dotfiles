@@ -16,5 +16,9 @@ sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4&&ibus-setup
 #Gnome-Terminal Color Configure
 git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git&&cd gnome-terminal-colors-solarized&&./install.sh
 
+
+#autojump
+git clone https://github.com/joelthelion/autojump.git&&cd autojump&&./install.sh
+
 #Configuration
 ./link.sh

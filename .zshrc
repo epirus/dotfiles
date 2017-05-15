@@ -129,4 +129,10 @@ export GOPATH=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
 #thefuck ubuntu
 export PATH=$PATH:~/.local/bin/
-eval $(thefuck --alias) 
+eval $(thefuck --alias)
+
+
+[[ -s /home/lee/.autojump/etc/profile.d/autojump.sh ]] && source /home/lee/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
+
