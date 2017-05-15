@@ -99,10 +99,11 @@ alias gc="git commit -m"
 alias gm="git merge"
 
 #For Neovim
+alias vi="nvim"
+alias vim="nvim"
+
 if [[ `uname` == 'Darwin' ]]
 then
-  alias vi="nvim"
-  alias vim="nvim"
   alias caff="caffeinate -d"
 fi
 
