@@ -7,6 +7,13 @@ else
   rm ~/.tmux.conf&&ln ./.tmux.conf ~/.tmux.conf
 fi
 
+if [ ! -f ~/.zshrc ]; then
+  #File dont exists
+  ln ./.zshrc ~/.tmux.conf
+else
+  rm ~/.zshrc&&ln ./.zshrc ~/.zshrc
+fi
+
 if [ ! -d ~/.config/nvim ]; then
   #Directory dont exists.
   mkdir ~/.config/nvim && cp -r ./.config/nvim/* ~/.config/nvim/
