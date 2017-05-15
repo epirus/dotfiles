@@ -21,6 +21,14 @@ else
   cp -r ./.config/nvim/* ~/.config/nvim/
 fi
 
+
+if [ ! -d ~/.pip ]; then
+  #Directory dont exists.
+  mkdir ~/.pip/&& cp  ./.pip/pip.conf ~/.pip/
+else
+  cp  ./.pip/pip.conf ~/.pip/
+fi
+
 git config --global core.excludesfile ~/.gitignore_global
 cp ./.npmrc ~/.npmrc
 cp ./.yarnrc ~/.yarnrc
