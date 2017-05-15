@@ -127,4 +127,6 @@ fi
 #Go Environment
 export GOPATH=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
-#
+#thefuck ubuntu
+export PATH=$PATH:~/.local/bin/
+eval $(thefuck --alias) 
