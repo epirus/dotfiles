@@ -98,6 +98,9 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gm="git merge"
 
+# Source Config
+alias s="source ~/.zshrc"
+
 #For Neovim
 alias vi="nvim"
 alias vim="nvim"
