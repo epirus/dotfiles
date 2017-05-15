@@ -130,11 +130,15 @@ fi
 #Go Environment
 export GOPATH=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
+
 #thefuck ubuntu
 export PATH=$PATH:~/.local/bin/
 eval $(thefuck --alias)
 
+#anaconda3
+export PATH=$PATH:~/anaconda3/
 
+#autojump
 [[ -s /home/lee/.autojump/etc/profile.d/autojump.sh ]] && source /home/lee/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
