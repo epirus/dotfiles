@@ -134,8 +134,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/.local/bin/
 eval $(thefuck --alias)
 
-
-[[ -s /home/lee/.autojump/etc/profile.d/autojump.sh ]] && source /home/lee/.autojump/etc/profile.d/autojump.sh
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
 
