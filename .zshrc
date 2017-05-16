@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump)
 
 # User configuration
 
@@ -130,11 +130,17 @@ fi
 #Go Environment
 export GOPATH=/usr/local/go
 export PATH=$PATH:$GOPATH/bin
+
 #thefuck ubuntu
 export PATH=$PATH:~/.local/bin/
 eval $(thefuck --alias)
 
+#autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
+
+#anaconda3
+export PATH=$PATH:~/anaconda3/
+
 
 

@@ -1,5 +1,10 @@
 #Install Basic
+<<<<<<< HEAD
 sudo apt-get install -y  python3-pip python-pip git tmux openssh-server zsh xclip gitk
+=======
+
+sudo apt-get install -y  python3-pip python-pip git tmux openssh-server zsh xclip gitk tree
+>>>>>>> fbbbf70c5d925343df991bebce1ba12f305fce7c
 
 #Install on-my-zsh
 chsh -s $(which zsh) && zsh
