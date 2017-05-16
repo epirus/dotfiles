@@ -141,6 +141,3 @@ autoload -U compinit && compinit -u
 
 #anaconda3
 export PATH=$PATH:~/anaconda3/
-
-
-
