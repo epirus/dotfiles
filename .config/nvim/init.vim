@@ -127,6 +127,7 @@ if has('nvim')
     nmap <leader>th :split term://zsh<CR>
 endif
 
+
 "http://stackoverflow.com/questions/39645253/clipboard-failure-in-tmux-vim-after-upgrading-to-macos-sierra
 " set clipboard=unnamed
 highlight SignColumn ctermbg=8
