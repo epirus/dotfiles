@@ -7,7 +7,6 @@ Plug 'mileszs/ack.vim'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
-"Plug 'scrooloose/nerdtree',{ 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim'
@@ -18,6 +17,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'yonchu/accelerated-smooth-scroll'
@@ -126,6 +126,7 @@ if has('nvim')
     nmap <leader>tn :tabnew term://zsh<CR>
     nmap <leader>th :split term://zsh<CR>
 endif
+
 
 "http://stackoverflow.com/questions/39645253/clipboard-failure-in-tmux-vim-after-upgrading-to-macos-sierra
 " set clipboard=unnamed

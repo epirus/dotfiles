@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump)
 
 # User configuration
 
@@ -135,15 +135,14 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/.local/bin/
 eval $(thefuck --alias)
 
+#autojump
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
 #anaconda3
 export PATH=$PATH:~/anaconda3/
 
-#autojump
-[[ -s /home/lee/.autojump/etc/profile.d/autojump.sh ]] && source /home/lee/.autojump/etc/profile.d/autojump.sh
-autoload -U compinit && compinit -u
-
-
-
+#NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
