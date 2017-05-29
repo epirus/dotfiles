@@ -1,6 +1,6 @@
 #Install Basic
 
-sudo apt-get install -y  python3-pip python-pip git tmux openssh-server zsh xclip gitk tree
+sudo apt-get install -y  python3-pip python-pip git tmux openssh-server zsh xclip gitk tree proxychains
 
 #Install  Neovim
 sudo add-apt-repository ppa:neovim-ppa/unstable
