@@ -1,5 +1,10 @@
 #Install Basic
+<<<<<<< HEAD
+
+sudo apt-get install -y  python3-pip python-pip git tmux openssh-server zsh xclip gitk tree proxychains
+=======
 sudo apt-get install -y  python3-pip python-pip git tmux openssh-server zsh xclip gitk tree
+>>>>>>> 3780ff373e8ef285b65e9b4f124a3b60dd7fab01
 
 #Install on-my-zsh
 chsh -s $(which zsh) && zsh
