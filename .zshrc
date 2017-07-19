@@ -98,7 +98,7 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gm="git merge"
 alias telegram-send="proxychains4  telegram-send"
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome -headless"
 
 # Source Config
 alias s="source ~/.zshrc"
