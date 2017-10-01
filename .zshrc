@@ -103,10 +103,6 @@ alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chr
 # Source Config
 alias s="source ~/.zshrc"
 
-#For Neovim
-alias vi="nvim"
-alias vim="nvim"
-
 if [[ `uname` == 'Darwin' ]]
 then
   alias caff="caffeinate -d"

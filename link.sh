@@ -14,12 +14,6 @@ else
   rm ~/.zshrc&&ln ./.zshrc ~/.zshrc
 fi
 
-if [ ! -d ~/.config/nvim ]; then
-  #Directory dont exists.
-  mkdir ~/.config/nvim && cp -r ./.config/nvim/* ~/.config/nvim/
-else
-  cp -r ./.config/nvim/* ~/.config/nvim/
-fi
 
 
 if [ ! -d ~/.pip ]; then
